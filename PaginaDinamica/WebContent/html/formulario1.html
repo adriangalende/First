@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="../css/estilo4.css">
+<title>FORMULARIO 1</title>
+</head>
+<body>
+	<form name="form1" action="urlservidor" method="post">
+		<table>
+		<caption><strong>Datos a rellenar por los usuarios</strong></caption>
+			<tbody>
+				<tr>
+					<td> Nombre*:&nbsp;&nbsp; </td> 
+					<td><input type="text" name="nombre" size="35" maxlength="35" placeholder="Escribe tu nombre" required></td>
+				</tr>
+				<tr>
+					<td> Apellidos*:&nbsp;&nbsp; </td>
+					<td> <input type="text" name="apellidos" size="60" maxlength="60" placeholder="Primer apellido y Segundo apellido" required> </td>
+				</tr>
+				<tr>
+					<td> Fecha Nacimiento*:&nbsp;&nbsp; </td>
+					<td> <input type="date" placeholder="dd/mm/aa" required></td>
+				</tr>
+				<tr>
+					<td> Calle:&nbsp;&nbsp; </td>
+					<td> <input type="text" name="direccion" size="60" maxlength="60" placeholder="dirección, número"></td>
+				</tr>
+				<tr>
+					<td> Código Postal: </td>
+					<td> <input type="text" size="5" maxlength="5"></td>
+				</tr>
+				<tr>
+					<td> Provincia: </td>
+					<td> <input type="text" name="provincia" size="35" maxlength="35">
+						&nbsp; 
+						Teléfono: 
+						<input type="text" name="telefono" size="8" maxlength="8">
+						
+					</td>
+				</tr>
+				<tr>
+					<td> Sexo*</td>
+					<td> 
+					Hombre<input type="radio" value="H" name="sexo" required> 
+					Mujer <input type="radio" value="M" name="sexo" required>
+					&nbsp;&nbsp;
+					Estado Civil: &nbsp;&nbsp;<select name="estadoCivil" required>
+					<option value="1" > Soltero/a </option>
+					<option value="2"> Casado/a </option>
+					<option value="3"> Divorciado/a </option>	
+					<option value="4"> Viudo/a </option>	
+					</select>
+				</tr>
+				<tr>
+					<td> Idiomas: </td>
+					<td>
+					Español <input type="checkbox" value="ESP" name="idiomas" Checked> 
+					Francés <input type="checkbox" value="FRA" name="idiomas"> 
+					Inglés <input type="checkbox" value="ENG" name="idiomas"> 
+					Alemán <input type="checkbox" value="GER" name="idiomas"> 
+					</td>				
+				</tr>
+				<tr>
+					<td> Comentario </br>Personales</td>
+					<td> <textarea rows="2" cols="44" placeholder="Añade un comentario" required style="resize:none"></textarea></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<pre style="color:red">* Campos Obligatorios</pre>
+					</td>
+				</tr>				
+				<tr>
+					<td></td>
+					<td>
+						<button type="submit" name="enviar">enviar los datos</button>
+						<button type="reset" name="limpiar">vaciar datos</button>
+					</td>
+				</tr>
+		</table>	
+	</form>
+</body>
+</html>

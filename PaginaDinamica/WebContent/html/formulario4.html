@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulario 4</title>
+<link rel="stylesheet" type="text/css" href="../css/estilo4.css">
+</head>
+<body>
+<form name="form4" action="urlservidor" method="post">
+		<table>
+		<caption><strong>Formulario con estilos</strong></caption>
+			<tbody>
+			<tr>
+				<td><label for="nombre">Nombre:</label></td>
+				<td>
+					<input id="nombre" type="text" name="nombre" size="35" maxlength="35">
+					&nbsp; <label for="fnac">F.Nac:</label> 
+					<input id="fnac" type="text" name="fnac" size="10" maxlength="10">
+					&nbsp; <label for="dni">DNI:</label>
+					<input id="dni" type="text" name="dni" size="10" maxlength="9">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="apellidos">Apellidos:</label></td>
+				<td><input class="cursorTexto" id="apellidos" type="text" name="apellidos" size="70" maxlength="70">
+			</tr>
+			<tr>
+				<td><label for="direccion">Calle y número:</label></td>
+				<td><input id="direccion" type="text" name="direccion" size="70" maxlength="70">
+			</tr>
+			<tr>
+				<td><label for="codigoPostal">Código Postal:</label></td>
+				<td>
+					<input id="codigoPostal" type="text" name="codigoPostal" size="5" maxlength="5">
+					&nbsp; <label for="ciudad">Ciudad:</label>
+					<input id="ciudad" type="text" name="ciudad" size="51" maxlength="51">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="provincia">Provincia:</label></td>
+				<td>
+					<input id="provincia" type="text" name="provincia" size="24" maxlength="24">
+					&nbsp;&nbsp; <label for="telefono">Teléfono:</label> &nbsp;
+					<input type="text" id="telefono" name="telefono" size="29" maxlength="29">
+				</td>				
+			</tr>
+			<tr>
+				<td><label for="desplegable">Opción:</label></td>
+				<td>
+					<select id="desplegable" name="opcion" style="width:330px;">
+					<option value="1" > Opción 1 </option>
+					<option value="2"> Opción 2 </option>
+					<option value="3"> Opción 3 </option>	
+					<option value="4"> Opción 4 </option>
+					<option value="5"> Opción 5 </option>	
+					<option value="6"> Opción 6 </option>		
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="comentarios">Comentarios</br>Personales</label></td>
+				<td>
+					<textarea id="comentarios" class="cursorTexto" name="comentarios" cols="70" rows="3" placeholder="escribe un comentario..." style="resize:none;"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+						<hr>
+						<audio id="campanas" src="http://freesfx.co.uk/rx2/mp3s/9/10296_1369762953.mp3" loop controls></audio>
+						<hr>
+						<button id="enviar" type="submit" name="enviar">enviar los datos</button>
+						<button id="limpiar" type="reset" name="limpiar">vaciar datos</button>
+						
+						<p class="cursorCruz">cruz</p>
+						<p class="cursorTexto">Texto</p>
+						<p class="cursorWait">Wait</p>
+						<p class="cursorHand">Mano<</p>
+						
+				</td>
+			</tr>																					
+			</tbody>
+		</table>
+</form>
+</body>
+</html>

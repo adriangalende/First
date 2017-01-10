@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Ejercicio html</title>
+<link rel="stylesheet" type="text/css" href="./CSS/estilo.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<form name="form1" action="urlservidor" method="post">
+	<table>
+	<tbody>
+		<tr>
+			<td>Nombre*</td>
+			<td>
+			<input type="text" name="nombre" size="35" maxlength="35" accesskey="A" required placeholder="Su nombre">
+			</td>
+		</tr>
+		<tr>
+			<td> 1er Apellido* </td>
+			<td>
+			<input type="text" name="apellido1" size="35" maxlength="35" required >
+			</td>
+		</tr>
+		<tr>
+			<td> 2 Apellido* </td>
+			<td>
+			<input type="text" name="apellido2" size="35" maxlength="35" required>
+			</td>
+		</tr>		
+		<tr>
+			<td> Email </td>
+			<td>
+			<input type="email" name="email" size="35" maxlength="35" placeholder="p.e. nombrecuenta@dominio">
+			</td>
+		</tr>
+		<tr>
+			<td> Color </td>
+			<td>
+			<input type="color"  name="colores">
+			</td>
+		</tr>		
+		<tr>
+			<td> <label for="telefono">Teléfono </label></td>
+			<td>
+			<input type="text"  name="telefono" size="35" maxlength="35">
+			</td>
+		</tr>
+		<tr>
+			<td> <label for="comentario">Comentario</label> </td>
+			<td>
+			<textarea name="comentario" placeholder="escribe un comentario..." rows="10" cols="40" style="resize:none"></textarea>
+			</td>
+		</tr>		
+		<tr>
+			<td colspan="2">
+			<label>Eres adulto?</label>
+			</td>
+		</tr>
+		
+		<tr>
+		<td colspan="2">
+			Sí<input type="radio" name="adulto" value="si" checked>
+			No<input type="radio" name="adulto" value="no">
+
+		</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			<input type="hidden" name="oculto">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			Ciudad:
+				<select name="provincias">
+					<option value="1" > Madrid </option>
+					<option value="2"> Barcelona </option>
+					<option value="3">Toledo </option>
+					<option value="4" selected>Palma</option>
+					<option value="5">Zaragoza</option>
+					<option value="6">Otras </option>
+					
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			
+			<td colspan="2">
+				<audio src="" loop controls></audio>
+				<input type="submit" value="ENVIAR">
+			</td>
+		</tr>	
+		<tr>
+			<td colspan="2">
+				<input type="reset" value="LIMPIAR">
+			</td>
+		</tr>
+	</tbody>
+	</table>
+</form>
+</body>
+<button type="button" name="boton" accesskey="p" onclick="alert('imprimiendo')"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlcOT5X_Wwyy5p0KEwKIfix4vO9eyftu-3DfLZJkcwq0HDNxxtKjwRzA" alt="imprimir" title="imprimir"></img></button>
+<script>
+$(document).ready(function(){
+    $("input").click(function(){
+    	alert("El boton " + $(this).val());
+    	$(this).css("background-color","red");
+    });
+});
+</script>
+</html>

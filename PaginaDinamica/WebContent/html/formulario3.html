@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<style type="text/css">
+	button{
+	 position:relative;
+	 left: 25%;
+	}
+</style>
+<title>FORMULARIO 3</title>
+</head>
+<body>
+<form name="form1" action="urlservidor" method="post">
+		<table border="1">
+		<caption><strong></strong></caption>
+			<tbody>
+			<tr>
+				<td>Nombre:</td>
+				<td>
+					<input type="text" name="nombre" size="35" maxlength="35">
+					&nbsp; F.Nac: 
+					<input type="text" name="fnac" size="10" maxlength="10">
+					&nbsp; DNI:
+					<input type="text" name="dni" size="10" maxlength="9">
+				</td>
+			</tr>
+			<tr>
+				<td>Apellidos:</td>
+				<td><input type="text" name="apellidos" size="70" maxlength="70">
+			</tr>
+			<tr>
+				<td>Calle y número:</td>
+				<td><input type="text" name="direccion" size="70" maxlength="70">
+			</tr>
+			<tr>
+				<td>Código Postal:</td>
+				<td>
+					<input type="text" name="codigoPostal" size="5" maxlength="5">
+					&nbsp; Ciudad:
+					<input type="text" name="ciudad" size="51" maxlength="51">
+				</td>
+			</tr>
+			<tr>
+				<td>Provincia:</td>
+				<td>
+					<input type="text" name="provincia" size="24" maxlength="24">
+					&nbsp;&nbsp; Teléfono: &nbsp;
+					<input type="text" name="telefono" size="29" maxlength="29">
+				</td>				
+			</tr>
+			<tr>
+				<td>Opción:</td>
+				<td>
+					<select name="opcion" style="width:330px;">
+					<option value="1" > Opción 1 </option>
+					<option value="2"> Opción 2 </option>
+					<option value="3"> Opción 3 </option>	
+					<option value="4"> Opción 4 </option>
+					<option value="5"> Opción 5 </option>	
+					<option value="6"> Opción 6 </option>		
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Comentarios</br>Personales</td>
+				<td>
+					<textarea cols="70" rows="3" placeholder="escribe un comentario..." style="resize:none;"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+						<button type="submit" name="enviar">enviar los datos</button>
+						<button type="reset" name="limpiar">vaciar datos</button>
+				</td>
+			</tr>																					
+			</tbody>
+		</table>
+</form>
+</body>
+</html>

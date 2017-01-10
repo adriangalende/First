@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>FORMULARIO 2</title>
+<style type="text/css">
+	tr{
+		height: 30px;
+	}
+</style>
+</head>
+<body>
+<form name="form1" action="urlservidor" method="post">
+		<table>
+		<caption><h1><strong>Formulario de entrada</strong></h1></caption>
+			<tbody>
+				<tr>
+					<td> Nombre*:&nbsp;&nbsp; </td> 
+					<td><input type="text" name="nombre" size="35" maxlength="35" placeholder="Escribe tu nombre" required></td>
+				</tr>
+				<tr>
+					<td> Sexo*</td>
+					<td> 
+						<input type="radio" value="H" name="sexo" required> Hombre
+						<input type="radio" value="M" name="sexo" required>	Mujer					
+					</td>				
+				</tr>
+				<tr>
+					<td> Vehículos</td>
+					<td> 
+						<input type="checkbox" value="C" name="vehiculo" > Coche
+						 <input type="checkbox" value="B" name="vehiculo"> Bici					
+					</td>				
+				</tr>
+				<tr>
+					<td> Subir imagen: </td>
+					<td> <input type="file" name="subirImagen" accept="image/*">
+				</tr>				
+				<tr>
+					<td> Password: </td>
+					<td> <input type="password" size="35" maxlength="8" required></td>
+				</tr>
+				<tr>
+					<td> Comida*</td>
+					<td> 
+					&nbsp;&nbsp;
+					Estado Civil: &nbsp;&nbsp;<select name="comida">
+					<option value="1" > Pescado </option>
+					<option value="2"> Carne </option>
+					<option value="3"> Vegetariano </option>	
+					<option value="4"> Vegano </option>	
+					</select>
+				</tr>
+				<tr>
+				<tr>
+					<td> Bebidas</td>
+					<td> 
+					&nbsp;&nbsp;
+					<select name="bebida" size="3">
+					<option value="1" > Agua </option>
+					<option value="2"> Vino </option>
+					<option value="3"> Cerveza </option>	
+					</select>
+				</tr>
+				<tr>
+					<td> Comentarios </td>
+					<td> <textarea rows="6" cols="44" placeholder="Añade un comentario" style="resize:none"></textarea></td>
+				</tr>				
+				<tr>				
+					<td></td>
+					<td>
+						<pre style="color:red">* Campos Obligatorios</pre>
+					</td>
+				</tr>				
+				<tr>
+					<td></td>
+					<td>
+						<button type="submit" name="enviar">ENVIAR</button>
+					</td>
+				</tr>
+		</table>	
+	</form>
+</body>
+</html>
